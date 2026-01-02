@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#FFF5F7">
+    <!--  TOP BAR  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp" android:gravity="center" android:background="@drawable/bg_gradient">
+        <TextView android:text="Volunteer Opportunities" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingTop="32dp"/>
+    </LinearLayout>
+    <!--  CONTENT  -->
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="16dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <!--  VOLUNTEER CARD  -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/card_bg" android:orientation="vertical" android:padding="16dp">
+                <TextView android:text="Cultural Fest Volunteer" android:textStyle="bold" android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Dance Club • Dec 10" android:textColor="#666666" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Role: Event Coordinator" android:textColor="#666666" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <!--  STATUS CHIP (Replaced with TextView)  -->
+                <TextView android:id="@+id/chipStatus" android:text="Active" android:textColor="#FFFFFF" android:background="@drawable/bg_chip_round" android:paddingLeft="12dp" android:paddingRight="12dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <!--  PROGRESS  -->
+                <TextView android:text="Progress" android:textStyle="bold" android:layout_marginTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ProgressBar android:id="@+id/progressBar" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="8dp" android:max="100" android:progress="60" android:layout_marginTop="6dp"/>
+                <!--  HOURS  -->
+                <TextView android:id="@+id/txtHours" android:text="Hours Completed: 6 / 10" android:textColor="#666666" android:layout_marginTop="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <!--  BUTTON (Standard Android Button)  -->
+                <Button android:id="@+id/btnComplete" android:text="Mark as Completed" android:textColor="#FFFFFF" android:background="@color/blue" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!--  BOTTOM NAV  -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/bottomNavigation" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@android:color/white" app:menu="@menu/member_bottom_nav" app:labelVisibilityMode="labeled"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Theme.Clubconnectapp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- night theme values -->
+    </style>
+
+    <!-- ADD THIS -->
+    <style name="Theme.Clubconnectapp.NoActionBar"
+        parent="Theme.Material3.DayNight.NoActionBar" />
+
+</resources>

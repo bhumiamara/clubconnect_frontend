@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF5F7">
+
+    <!-- TOP BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_gradient">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member Dashboard"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- SCROLL CONTENT -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- WELCOME -->
+            <TextView
+                android:text="Welcome,"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvMemberInfo"
+                android:text="CSE • CS2021001"
+                android:textColor="#666"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- SEARCH -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Search events, clubs..."
+                android:background="@drawable/edit_bg"
+                android:padding="12dp" />
+
+            <!-- QUICK ACTIONS -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_marginTop="16dp"
+                android:useDefaultMargins="true">
+
+                <!-- CATEGORIES -->
+                <LinearLayout
+                    android:id="@+id/btnCategories"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/btn_selected"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_categories"
+                        android:backgroundTint="@android:color/white" />
+
+                    <TextView
+                        android:text="CATEGORIES"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!-- MY EVENTS -->
+                <LinearLayout
+                    android:id="@+id/btnMyEvents"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/btn_selected"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_events"
+                        android:backgroundTint="@android:color/white" />
+
+                    <TextView
+                        android:text="MY EVENTS"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!-- WORKSHOPS -->
+                <LinearLayout
+                    android:id="@+id/btnWorkshops"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/btn_selected"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_workshop"
+                        android:backgroundTint="@android:color/white" />
+
+                    <TextView
+                        android:text="WORKSHOPS"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </GridLayout>
+
+            <!-- UPCOMING EVENTS -->
+            <TextView
+                android:text="Upcoming Events"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- EVENT CARD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_bg"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="AI Workshop"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Registered • Dec 5, 2:00 PM"
+                        android:textColor="#666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnViewEvent"
+                    android:text="View"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/btn_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- ANNOUNCEMENTS -->
+            <TextView
+                android:text="Announcements"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_bg"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="📢 AI Workshop registrations closing soon!"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Confirm your participation before tomorrow."
+                    android:textColor="#666"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_bg"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="📌 Coding Club Meeting"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Friday • Lab 3 • 3:30 PM"
+                    android:textColor="#666"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- BOTTOM NAVIGATION -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:menu="@menu/member_bottom_nav"
+        app:labelVisibilityMode="labeled" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/ivGalleryImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_codingproject" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvImageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="AI Workshop Series - Part 1"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvImageDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nov 28, 2025"
+        android:textColor="#666"/>
+
+    <TextView
+        android:id="@+id/tvImageDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Students learning AI concepts"
+        android:textColor="#666"/>
+
+</LinearLayout>

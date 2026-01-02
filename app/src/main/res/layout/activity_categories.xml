@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF6F6"
+    android:layout_gravity="center">
+
+    <!-- Back -->
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Back to Home"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="24dp"/>  <!-- Added marginTop -->
+
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Club Categories"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore clubs by category"
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:paddingBottom="16dp"/>
+
+    <!-- Categories List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCategories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

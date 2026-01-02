@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFF5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:text="← Back"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:id="@+id/btnCreateWorkshop"
+            android:text="+ Create Workshop"
+            android:textColor="@android:color/white"
+            android:background="@drawable/gradient_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:text="Workshops and Events"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- RecyclerView (FIXED) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"/>
+</LinearLayout>

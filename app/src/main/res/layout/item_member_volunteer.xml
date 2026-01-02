@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_bg"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/tvVolunteerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volunteer Title"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvVolunteerDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Club • Deadline"
+        android:textColor="#666"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/tvVolunteerRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role: Event Coordinator"
+        android:textColor="#666"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/tvVolunteerDeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progressVolunteer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="8dp"
+        android:progress="0"
+        android:max="100"/>
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_selected"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

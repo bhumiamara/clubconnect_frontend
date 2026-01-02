@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.simats.clubconnectapp">
+
+    <!-- Internet Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ClubConnectApp"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <!-- Splash Screen (Launcher) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Authentication -->
+        <activity android:name=".LoginActivity" android:exported="false" />
+        <activity android:name=".RegisterActivity" android:exported="false" />
+        <activity android:name=".ResetPasswordEmailActivity" android:exported="false" />
+        <activity android:name=".NewPasswordActivity" android:exported="false" />
+
+        <!-- Dashboards -->
+        <activity android:name=".AdminDashboardActivity" android:exported="false" />
+        <activity android:name=".MemberDashboardActivity" android:exported="false" />
+
+        <!-- Categories -->
+        <activity android:name=".CategoriesActivity" android:exported="false" />
+
+        <!-- Clubs -->
+        <activity android:name=".AcademicClubsActivity" android:exported="false" />
+        <activity android:name=".ArtsActivity" android:exported="false" />
+        <activity android:name=".SportsActivity" android:exported="false" />
+        <activity android:name=".CommunityActivity" android:exported="false" />
+        <activity android:name=".HobbyClubsActivity" android:exported="false" />
+
+        <!-- Add Club -->
+        <activity android:name=".AddClubActivity" android:exported="false" />
+
+        <!-- Club Details -->
+        <activity
+            android:name=".ClubDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Workshops -->
+        <activity android:name=".WorkshopsActivity" android:exported="false" />
+        <activity android:name=".CreateWorkshopActivity" android:exported="false" />
+        <activity android:name=".RegisterWorkshopActivity" android:exported="false" />
+
+        <!-- Events -->
+        <activity android:name=".EventCalendarActivity" android:exported="false" />
+
+        <!-- Collaboration -->
+        <activity android:name=".CollaborationActivity" android:exported="false" />
+        <activity android:name=".NewRequestActivity" android:exported="false" />
+
+        <!-- ✅ Volunteer Admin -->
+        <activity
+            android:name=".VolunteerAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewApplicationActivity"
+            android:exported="false" />
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".MemberEventsActivity" />
+        <activity android:name=".MemberWorkshopsActivity" />
+        <activity
+            android:name=".VolunteermemberActivity"
+            android:exported="false" />
+        <activity android:name=".MemberProfileActivity" />
+        <activity android:name=".categorymemberactivity" />
+        <activity android:name=".memberAcademicClubsActivity" />
+        <activity android:name=".CertificateActivity"/>
+        <activity android:name=".MemberArtsActivity" />
+        <activity android:name=".MemberSportsActivity" />
+        <activity android:name=".MemberCommunityActivity" />
+        <activity android:name=".MemberHobbyClubsActivity" />
+    </application>
+
+</manifest>

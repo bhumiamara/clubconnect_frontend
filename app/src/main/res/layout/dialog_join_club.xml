@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bg_dialog_round">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join Coding Club"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note: Only club admins can add members directly. Please contact the club president."
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:background="#E3F2FD"
+        android:textColor="#000"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/tvPresidentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="President: Rahul Kumar"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: president@coding-club.club"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: +91 98765 43210"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnGotIt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Got it"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

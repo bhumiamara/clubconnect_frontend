@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- MAIN CONTENT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFF5F7">
+
+        <!-- TOP BAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:padding="12dp"
+            android:gravity="center"
+            android:background="@drawable/bg_gradient">
+
+            <ImageView
+                android:id="@+id/btnMenu"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:backgroundTint="@android:color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Club Connect"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- SCROLLABLE CONTENT -->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <!-- WELCOME -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome back,"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Science • CS2021001"
+                    android:textColor="#666"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- SEARCH -->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Search clubs, events, workshops..."
+                    android:background="@drawable/edit_bg"
+                    android:padding="12dp"/>
+
+                <!-- QUICK ACTIONS -->
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:layout_marginTop="16dp"
+                    android:useDefaultMargins="true">
+
+                    <!-- CATEGORIES -->
+                    <LinearLayout
+                        android:id="@+id/btnCategories"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/btn_selected"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_categories"
+                            android:backgroundTint="@android:color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CATEGORIES"
+                            android:textColor="@android:color/white"
+                            android:layout_marginTop="6dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <!-- WORKSHOPS -->
+                    <LinearLayout
+                        android:id="@+id/btnWorkshops"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/btn_selected"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_workshop"
+                            android:backgroundTint="@android:color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WORKSHOPS"
+                            android:textColor="@android:color/white"
+                            android:layout_marginTop="6dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <!-- EVENTS -->
+                    <LinearLayout
+                        android:id="@+id/btnEvents"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/btn_selected"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_events"
+                            android:backgroundTint="@android:color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EVENTS"
+                            android:textColor="@android:color/white"
+                            android:layout_marginTop="6dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <!-- COLLABORATE -->
+                    <LinearLayout
+                        android:id="@+id/btnCollaborate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/btn_selected"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_collaborate"
+                            android:backgroundTint="@android:color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COLLABORATE"
+                            android:textColor="@android:color/white"
+                            android:layout_marginTop="6dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                </GridLayout>
+
+                <!-- UPCOMING EVENTS -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upcoming Events"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"/>
+
+                <!-- FIRST EVENT CARD -->
+                <!-- FIRST EVENT CARD -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_bg"
+                    android:padding="12dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AI Workshop"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AI Club • Dec 5, 2:00 PM"
+                            android:textColor="#666"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnRegisterAI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Register"
+                        android:background="@drawable/btn_selected"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <!-- SECOND EVENT CARD -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_bg"
+                    android:padding="12dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cultural Fest"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dance Club • Dec 10, 5:00 PM"
+                            android:textColor="#666"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnRegisterDance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Register"
+                        android:background="@drawable/btn_selected"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <!-- RECOMMENDED CLUBS -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recommended Clubs"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"/>
+
+                <!-- CODING CLUB -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_bg"
+                    android:padding="12dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_laptop"
+                        android:tint="#FF69B4"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coding Club"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Technical"
+                            android:textColor="#666"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="156 members"
+                            android:textColor="#666"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnJoinCoding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Join"
+                        android:background="@drawable/btn_selected"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <!-- ROBOTICS CLUB -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_bg"
+                    android:padding="12dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_robot"
+                        android:tint="#FF69B4"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Robotics Club"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Technical"
+                            android:textColor="#666"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="89 members"
+                            android:textColor="#666"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnJoinRobotics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Join"
+                        android:background="@drawable/btn_selected"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <!-- PHOTOGRAPHY CLUB -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_bg"
+                    android:padding="12dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_camera"
+                        android:tint="#FF69B4"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Photography Club"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Arts"
+                            android:textColor="#666"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="67 members"
+                            android:textColor="#666"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnJoinPhotography"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Join"
+                        android:background="@drawable/btn_selected"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <!-- BOTTOM MENU BAR ONLY -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:menu="@menu/bottom_nav_menu"
+            app:labelVisibilityMode="labeled"/>
+    </LinearLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

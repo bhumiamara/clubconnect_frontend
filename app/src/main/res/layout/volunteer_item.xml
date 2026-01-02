@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_bg"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp">
+
+    <!-- TITLE -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:text="Cultural Fest Volunteer"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- DETAILS (was txtClub ❌, now txtDetails ✅) -->
+    <TextView
+        android:id="@+id/txtDetails"
+        android:text="Dance Club • Dec 10"
+        android:textColor="#666666"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- ROLE -->
+    <TextView
+        android:id="@+id/txtRole"
+        android:text="Role: Event Coordinator"
+        android:textColor="#666666"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- DEADLINE -->
+    <TextView
+        android:id="@+id/txtDeadline"
+        android:text="Deadline: 3 days left"
+        android:textColor="#FF5722"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- PROGRESS BAR -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:max="100"
+        android:layout_marginTop="8dp"/>
+
+    <!-- HOURS -->
+    <TextView
+        android:id="@+id/txtHours"
+        android:text="Progress: 60%"
+        android:textColor="#666666"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- BUTTON -->
+    <Button
+        android:id="@+id/btnComplete"
+        android:text="Mark as Completed"
+        android:textColor="#FFFFFF"
+        android:background="@color/blue"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

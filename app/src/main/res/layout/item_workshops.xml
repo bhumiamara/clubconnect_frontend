@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_bg"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/tvWorkshopTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workshop Title"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvWorkshopClub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Club • X Days"
+        android:textColor="#666"
+        android:layout_marginTop="2dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressWorkshop"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="8dp"
+        android:progress="0"
+        android:max="100"/>
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress: 0%"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        android:textColor="#4CAF50"/>
+
+    <Button
+        android:id="@+id/btnCertificate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Certificate Locked"
+        android:enabled="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_selected"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Back -->
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingBottom="12dp"
+            android:paddingTop="32dp"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Collaboration"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingBottom="16dp"
+            android:paddingTop="32dp"/>
+
+        <!-- New Request Card -->
+        <LinearLayout
+            android:id="@+id/btnNewRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/tvPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#FF6A00"
+                android:paddingEnd="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNewRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Request"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvNewRequestDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start a collaboration"
+                    android:textSize="13sp"
+                    android:textColor="#666666" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Requests Card -->
+        <LinearLayout
+            android:id="@+id/btnRequests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <!-- Icon -->
+            <ImageView
+                android:id="@+id/imgRequests"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_requests"
+                android:tint="#E91E63"
+                android:contentDescription="Requests Icon"/>
+
+            <!-- Text container -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvRequests"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Requests"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/tvRequestsDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View incoming requests"
+                    android:textSize="13sp"
+                    android:textColor="#666666"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- Active Card -->
+        <LinearLayout
+            android:id="@+id/btnActive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <!-- Icon -->
+            <ImageView
+                android:id="@+id/imgActive"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_active"
+                android:tint="#4CAF50"
+                android:contentDescription="Active Icon"/>
+
+            <!-- Text container -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/tvActiveDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ongoing collaborations"
+                    android:textSize="13sp"
+                    android:textColor="#666666"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

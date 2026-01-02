@@ -1,0 +1,11 @@
+<resources>
+    <color name="pink">#FF5F9E</color>
+    <color name="orange">#FF7A18</color>
+    <color name="purple">#8A4FFF</color>
+    <color name="blue">#3F6BFF</color>
+    <color name="bg">#FFF5F8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="textDark">#333333</color>
+    <color name="grey">#808080</color>
+    <color name="black">#000000</color>
+</resources>
